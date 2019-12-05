@@ -1,0 +1,16 @@
+PODS:
+  - LLSocketManager (0.1.0)
+
+DEPENDENCIES:
+  - LLSocketManager (from `../`)
+
+EXTERNAL SOURCES:
+  LLSocketManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LLSocketManager: acb758da0bc14173e5beb6d04a2631d426bd1ffc
+
+PODFILE CHECKSUM: 322f4623979695f0a824cedc55e31494e2a4d175
+
+COCOAPODS: 1.7.2

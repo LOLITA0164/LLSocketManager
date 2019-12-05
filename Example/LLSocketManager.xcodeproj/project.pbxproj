@@ -24,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9665C3C7C135BD5551F4968E /* Pods_LLSocketManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFBF7883AEF4D110C285E51 /* Pods_LLSocketManager_Tests.framework */; };
 		BCEAE0A11705E31D9F18D0CB /* Pods_LLSocketManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F6C5C2D3439C5CBE0A3269 /* Pods_LLSocketManager_Example.framework */; };
+		C7BED01C2398D7370032A555 /* LLSocketHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BED01B2398D7370032A555 /* LLSocketHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		298243F70E091496EE8851D7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		298243F70E091496EE8851D7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		393B8BD7DA21FD6B5AF33C94 /* Pods-LLSocketManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLSocketManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-LLSocketManager_Example/Pods-LLSocketManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4D93FF69FDFC5BEC22A2D225 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5678357A67CCEF241049EEAF /* LLSocketManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LLSocketManager.podspec; path = ../LLSocketManager.podspec; sourceTree = "<group>"; };
+		4D93FF69FDFC5BEC22A2D225 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5678357A67CCEF241049EEAF /* LLSocketManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LLSocketManager.podspec; path = ../LLSocketManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* LLSocketManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLSocketManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +65,8 @@
 		7FFBF7883AEF4D110C285E51 /* Pods_LLSocketManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLSocketManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7069960E7F8078FEE4FC9E1 /* Pods-LLSocketManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLSocketManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-LLSocketManager_Tests/Pods-LLSocketManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C7BED01A2398D7370032A555 /* LLSocketHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLSocketHandler.h; sourceTree = "<group>"; };
+		C7BED01B2398D7370032A555 /* LLSocketHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLSocketHandler.m; sourceTree = "<group>"; };
 		DF9E98B5B318D31FD6216847 /* Pods-LLSocketManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLSocketManager_Example.release.xcconfig"; path = "Target Support Files/Pods-LLSocketManager_Example/Pods-LLSocketManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F4F6C5C2D3439C5CBE0A3269 /* Pods_LLSocketManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLSocketManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA870598B616C6BE934CC82E /* Pods-LLSocketManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLSocketManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LLSocketManager_Tests/Pods-LLSocketManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +106,6 @@
 				FA870598B616C6BE934CC82E /* Pods-LLSocketManager_Tests.debug.xcconfig */,
 				A7069960E7F8078FEE4FC9E1 /* Pods-LLSocketManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,11 +146,14 @@
 		6003F593195388D20070C39A /* Example for LLSocketManager */ = {
 			isa = PBXGroup;
 			children = (
+				C7BECFCE23979D490032A555 /* Lib */,
 				6003F59C195388D20070C39A /* LLAppDelegate.h */,
 				6003F59D195388D20070C39A /* LLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LLViewController.h */,
 				6003F5A6195388D20070C39A /* LLViewController.m */,
+				C7BED01A2398D7370032A555 /* LLSocketHandler.h */,
+				C7BED01B2398D7370032A555 /* LLSocketHandler.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -197,6 +202,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		C7BECFCE23979D490032A555 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,7 +220,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				0AE28862365FBD5F63FC9253 /* [CP] Embed Pods Frameworks */,
+				2608CC6632542C0815791BC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +270,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,7 +308,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AE28862365FBD5F63FC9253 /* [CP] Embed Pods Frameworks */ = {
+		2608CC6632542C0815791BC4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,6 +380,7 @@
 				6003F59E195388D20070C39A /* LLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C7BED01C2398D7370032A555 /* LLSocketHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

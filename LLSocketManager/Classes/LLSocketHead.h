@@ -6,7 +6,8 @@
 //  Copyright © 2019 LOLITA0164. All rights reserved.
 //
 
-#import "GCDAsyncSocket.h"
+
+#import <CocoaAsyncSocket/GCDAsyncSocket.h>
 #import "LLSocketManager.h"
 #import "LLSocketProtocol.h"
 #import "LLSocketMessage.h"

@@ -1,15 +1,26 @@
 PODS:
-  - LLSocketManager (0.1.0)
+  - CocoaAsyncSocket (7.6.3)
+  - LLSocketManager (0.1.0):
+    - CocoaAsyncSocket
+    - Reachability (~> 3.2)
+  - Reachability (3.2)
 
 DEPENDENCIES:
   - LLSocketManager (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaAsyncSocket
+    - Reachability
 
 EXTERNAL SOURCES:
   LLSocketManager:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LLSocketManager: acb758da0bc14173e5beb6d04a2631d426bd1ffc
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  LLSocketManager: dac908f9992ee1814e2d2feddb6ec14fab531db7
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
 
 PODFILE CHECKSUM: 322f4623979695f0a824cedc55e31494e2a4d175
 

@@ -18,5 +18,13 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LLSocketManager/Classes/**/*"
+  "source_files": "LLSocketManager/Classes/**/*",
+  "dependencies": {
+    "Reachability": [
+      "~> 3.2"
+    ],
+    "CocoaAsyncSocket": [
+
+    ]
+  }
 }

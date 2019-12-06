@@ -7,6 +7,7 @@
 //
 
 #import "LLSocketManager.h"
+#import <Reachability/Reachability.h>
 
 enum {
     SocketOfflineByServer,// 服务器掉线
@@ -33,6 +34,7 @@ static LLSocketManager* instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [LLSocketManager new];
+        [instance addObservers];
     });
     return instance;
 }
@@ -41,6 +43,7 @@ static LLSocketManager* instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [super allocWithZone:zone];
+        [instance addObservers];
     });
     return instance;
 }
@@ -91,7 +94,6 @@ static LLSocketManager* instance;
     return self.socket.isConnected;
 }
 
-
 /// 配置 socket 信息
 -(void)setupHost:(NSString*)host port:(UInt16)port delegate:(id <LLSocketProtocol>)delegate{
     self.host = host;
@@ -102,6 +104,7 @@ static LLSocketManager* instance;
 #pragma mark - <************************** socket操作部分 **************************>
 /// 连接host
 -(void)connectHost{
+    if (self.host.length == 0 || self.port == 0) { return; }
     // 链接前需要检测是否连接，否则出错
     if (self.isConnected) {
         [self cutOffSocketByUser]; // 主动断掉
@@ -183,10 +186,10 @@ static LLSocketManager* instance;
     }
     else if (sock.userData == [NSNumber numberWithInteger:SocketOfflineByUser]){
         [self cutOffSocketByUser];
-        LLLog(@"客服端 socket 断开了链接。");
+        LLLog(@"客户端 socket 断开了链接。");
     }
     else {
-        LLLog(@"socket 无故断开了链接。");
+        LLLog(@"socket 无故断开了链接。可能是网络问题。");
         // 开启socket连接检测
         [self keepConnectCheck];
     }
@@ -199,8 +202,6 @@ static LLSocketManager* instance;
         [self.delegate socket:sock didReadData:data withTag:tag];
     }
 }
-
-
 
 
 #pragma mark - <************************** socket长链接与检测 **************************>
@@ -253,6 +254,37 @@ static LLSocketManager* instance;
 -(void)invalidateConnectTimer{
     [_checkConnectTimer invalidate];
     _checkConnectTimer = nil;
+}
+
+
+#pragma mark - <************************** 应用即设备的变化监听 **************************>
+/// 添加监听
+-(void)addObservers{
+    // 应用进入前台
+    [NSNotificationCenter.defaultCenter addObserverForName:UIApplicationWillEnterForegroundNotification object:nil queue:NSOperationQueue.mainQueue usingBlock:^(NSNotification * _Nonnull note) {
+        [self reConnectSocketIfNeed];
+    }];
+    // 应用进入后台
+    [NSNotificationCenter.defaultCenter addObserverForName:UIApplicationDidEnterBackgroundNotification object:nil queue:NSOperationQueue.mainQueue usingBlock:^(NSNotification * _Nonnull note) {
+        [self cutOffSocketByUser];
+    }];
+    
+    // 监听当前网络
+    Reachability* reach = [Reachability reachabilityForInternetConnection];
+    [reach startNotifier];
+    [NSNotificationCenter.defaultCenter addObserverForName:kReachabilityChangedNotification object:nil queue:NSOperationQueue.mainQueue usingBlock:^(NSNotification * _Nonnull note) {
+        Reachability* reach = [note object];
+        if ([reach isKindOfClass:Reachability.class]) {
+            switch (reach.currentReachabilityStatus) {
+                case NotReachable:
+                    [self cutOffSocketByUser];
+                    break;
+                default:
+                    [self reConnectSocketIfNeed];
+                    break;
+            }
+        }
+    }];
 }
 
 

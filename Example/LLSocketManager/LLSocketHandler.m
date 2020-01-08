@@ -18,12 +18,12 @@
         @"Source":@"IOS iPhone Simulator(IOS 13.1)",
         @"AppKey":@"25061510",
     }];
-    [LLSocketManager.share sendMessage:message];
+    [LLSocketTool.share sendMessage:message];
 }
 
 /// 重写心跳包
 -(void)sendKeepAliveData:(GCDAsyncSocket *)sock{
-    [LLSocketManager.share sendMessage:[LLSocketMessage message:@"KEEPALIVE<EOF>"]];
+    [LLSocketTool.share sendMessage:[LLSocketMessage message:@"KEEPALIVE<EOF>"]];
 }
 
 /// socket 收到了数据

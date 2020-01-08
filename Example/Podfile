@@ -5,6 +5,8 @@ platform :ios, '8.0'
 target 'LLSocketManager_Example' do
   pod 'LLSocketManager', :path => '../'
 
+#  pod 'LLSocketManager'
+
   target 'LLSocketManager_Tests' do
     inherit! :search_paths
 

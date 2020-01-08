@@ -22,8 +22,8 @@
     
     // 47.111.76.92
     // 8001
-    [LLSocketManager.share setupHost:@"47.111.76.92" port:8001 delegate:LLSocketHandler.new];
-    [LLSocketManager.share connectHost];
+    [LLSocketTool.share setupHost:@"47.111.76.92" port:8001 delegate:LLSocketHandler.new];
+    [LLSocketTool.share connectHost];
     
 }
 

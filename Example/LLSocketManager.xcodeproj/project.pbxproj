@@ -146,7 +146,6 @@
 		6003F593195388D20070C39A /* Example for LLSocketManager */ = {
 			isa = PBXGroup;
 			children = (
-				C7BECFCE23979D490032A555 /* Lib */,
 				6003F59C195388D20070C39A /* LLAppDelegate.h */,
 				6003F59D195388D20070C39A /* LLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -200,13 +199,6 @@
 				4D93FF69FDFC5BEC22A2D225 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		C7BECFCE23979D490032A555 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,13 +311,11 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LLSocketManager_Example/Pods-LLSocketManager_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
-				"${BUILT_PRODUCTS_DIR}/LLSocketManager/LLSocketManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLSocketManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,7 +510,7 @@
 				GCC_PREFIX_HEADER = "LLSocketManager/LLSocketManager-Prefix.pch";
 				INFOPLIST_FILE = "LLSocketManager/LLSocketManager-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.LLSocketManager-huaxun";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -538,7 +528,7 @@
 				GCC_PREFIX_HEADER = "LLSocketManager/LLSocketManager-Prefix.pch";
 				INFOPLIST_FILE = "LLSocketManager/LLSocketManager-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.LLSocketManager-huaxun";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

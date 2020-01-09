@@ -29,6 +29,7 @@
         NSLog(@"连接成功");
     };
     
+    [NSUserDefaults.standardUserDefaults setInteger:2 forKey:@"org.cocoapods.demo.LLSocketManager"];
     [NSUserDefaults.standardUserDefaults setObject:@"org.cocoapods.demo.LLSocketManager" forKey:@"DOSOMETHING"];
     [NSNotificationCenter.defaultCenter addObserverForName:@"DOSOMETHING" object:nil queue:NSOperationQueue.mainQueue usingBlock:^(NSNotification * _Nonnull note) {
            NSLog(@"%@",note);

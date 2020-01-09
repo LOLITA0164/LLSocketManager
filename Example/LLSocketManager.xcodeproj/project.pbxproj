@@ -23,8 +23,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9665C3C7C135BD5551F4968E /* Pods_LLSocketManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFBF7883AEF4D110C285E51 /* Pods_LLSocketManager_Tests.framework */; };
-		BCEAE0A11705E31D9F18D0CB /* Pods_LLSocketManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F6C5C2D3439C5CBE0A3269 /* Pods_LLSocketManager_Example.framework */; };
 		C7BED01C2398D7370032A555 /* LLSocketHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BED01B2398D7370032A555 /* LLSocketHandler.m */; };
+		C7D146D923C6F535004F7B34 /* Pods_LLSocketManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F6C5C2D3439C5CBE0A3269 /* Pods_LLSocketManager_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,8 +79,8 @@
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				C7D146D923C6F535004F7B34 /* Pods_LLSocketManager_Example.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				BCEAE0A11705E31D9F18D0CB /* Pods_LLSocketManager_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +212,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				44600086F490BDAF74ADC552 /* [CP] Embed Pods Frameworks */,
+				10A1E4564B9E765301FD6E68 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,7 +253,7 @@
 				ORGANIZATIONNAME = LOLITA0164;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = YU8WFN7X32;
+						DevelopmentTeam = 94CER85W8E;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -303,7 +303,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44600086F490BDAF74ADC552 /* [CP] Embed Pods Frameworks */ = {
+		10A1E4564B9E765301FD6E68 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,12 +505,13 @@
 			baseConfigurationReference = 393B8BD7DA21FD6B5AF33C94 /* Pods-LLSocketManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YU8WFN7X32;
+				DEVELOPMENT_TEAM = 94CER85W8E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LLSocketManager/LLSocketManager-Prefix.pch";
 				INFOPLIST_FILE = "LLSocketManager/LLSocketManager-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.LLSocketManager-huaxun";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.LLSocketManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -523,12 +524,13 @@
 			baseConfigurationReference = DF9E98B5B318D31FD6216847 /* Pods-LLSocketManager_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YU8WFN7X32;
+				DEVELOPMENT_TEAM = 94CER85W8E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LLSocketManager/LLSocketManager-Prefix.pch";
 				INFOPLIST_FILE = "LLSocketManager/LLSocketManager-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.LLSocketManager-huaxun";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.LLSocketManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

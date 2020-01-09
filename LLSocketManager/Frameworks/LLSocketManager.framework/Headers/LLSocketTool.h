@@ -21,12 +21,16 @@
 @protocol LLSocketProtocol;
 @class LLSocketMessage;
 @interface LLSocketTool : NSObject <GCDAsyncSocketDelegate>
-
-@property (nonatomic, copy) NSString* host; // 主机host （必须）
-@property (nonatomic, assign) UInt16 port;  // 端口号 （必须）
-@property (nonatomic, strong) id <LLSocketProtocol> delegate; // 用于处理或者配置 socket （必须）
-
-@property (readonly, nonatomic, assign) BOOL isConnected;  // socket 是否连接
+/// 主机host （必须）
+@property (nonatomic, copy) NSString* host;
+/// 端口号 （必须）
+@property (nonatomic, assign) UInt16 port;
+/// 用于处理或者配置 socket （必须）
+@property (nonatomic, strong) id <LLSocketProtocol> delegate;
+/// 连接成功的回调
+@property (nonatomic, copy) void (^connectSucceed)(LLSocketTool *socketTool);
+/// socket 是否连接
+@property (readonly, nonatomic, assign) BOOL isConnected;
 
 /// 实例
 +(instancetype)share;

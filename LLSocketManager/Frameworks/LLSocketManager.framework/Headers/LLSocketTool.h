@@ -13,13 +13,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "LLSocketManager.h"
+#import "LLSocketProtocol.h"
+#import "LLSocketMessage.h"
 
 /*
- 主要功能：完成 Socket 的链接保活功能
+ 主要功能：完成 Socket 的连接保活功能
  */
 
 @protocol LLSocketProtocol;
-@class LLSocketMessage;
 @interface LLSocketTool : NSObject <GCDAsyncSocketDelegate>
 /// 主机host （必须）
 @property (nonatomic, copy) NSString* host;

@@ -17,6 +17,7 @@
 				D0D44B0DD311F39CC79CEAFC6CDA17C6 /* PBXTargetDependency */,
 			);
 			name = LLSocketManager;
+			productName = LLSocketManager;
 		};
 /* End PBXAggregateTarget section */
 
@@ -97,41 +98,41 @@
 		0E23886F9CDEF7F57EAA7F712B28A6C5 /* Pods-LLSocketManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLSocketManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2FB4E67355FAA2B32E4DCBADBDB694E4 /* Pods-LLSocketManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLSocketManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3056CFC6759D13312B12767325628AC3 /* Pods-LLSocketManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LLSocketManager_Tests-dummy.m"; sourceTree = "<group>"; };
-		3300C5CB3302D7E2C6CC295E8E9D35FA /* LLSocketManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LLSocketManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3300C5CB3302D7E2C6CC295E8E9D35FA /* LLSocketManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LLSocketManager.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		337B13E6F91334761772B7EA2988137A /* Pods-LLSocketManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LLSocketManager_Example-frameworks.sh"; sourceTree = "<group>"; };
 		375942B65217ECE48BFCD34D8B2EE2E4 /* Pods-LLSocketManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLSocketManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3C86F69E4DAF8E0BCEB05226505F0641 /* Pods-LLSocketManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LLSocketManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3D5D33D91B73132DC723BDC494ADCA37 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
 		3F5C72798B1A62E104E7E6EBCA281299 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		400FF55D0451E7A8F33A3D0D3E11C1B9 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		400FF55D0451E7A8F33A3D0D3E11C1B9 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431DCD3293445DB93EC55A1AD9625BCB /* Pods-LLSocketManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LLSocketManager_Example-Info.plist"; sourceTree = "<group>"; };
 		4D830C67E72C1EBAED2BF08BB2099CBF /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
 		54AD08A31B9FDAEB7759457A07EB0E7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5D743196FEF6DFB3A80395723A595361 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		623E1CADB9DAC83A46592CFEEADDF167 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		6C47A549D3003A95240738C8D4B7E315 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C47A549D3003A95240738C8D4B7E315 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71962FF17C9D857541B87A1BAD9104D3 /* Pods-LLSocketManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LLSocketManager_Example.modulemap"; sourceTree = "<group>"; };
 		734C2CC030D0A1F502A1AB79E08C3998 /* Pods-LLSocketManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LLSocketManager_Example-dummy.m"; sourceTree = "<group>"; };
 		74BC50CC1FB905D6E5AB240949B1284C /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		7C213F74E0C246CCF70713CB0191DADB /* Pods-LLSocketManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLSocketManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7DEE577A1E6BD41FC57520FE21849379 /* Pods-LLSocketManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LLSocketManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		84A5970E1DCE756C6544B829CC6B118B /* Reachability-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-umbrella.h"; sourceTree = "<group>"; };
-		8F06691A02B120626693D1940E569FAD /* Pods_LLSocketManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LLSocketManager_Tests.framework; path = "Pods-LLSocketManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F06691A02B120626693D1940E569FAD /* Pods_LLSocketManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLSocketManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CBF35B9F0AD6723EC3BAABD91D4A21 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A58485A0754CC17D917051D3AF88ECFC /* Pods-LLSocketManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LLSocketManager_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A99DC257128B6C8D158CD52A37AA6303 /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
 		A9E17B256EADB1BA63AF810E316B2297 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
 		AAC0EBAE90F816C56CC36CB0C1206BB0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		ABE41114663BF96D4624578793A11F89 /* Pods_LLSocketManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LLSocketManager_Example.framework; path = "Pods-LLSocketManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE41114663BF96D4624578793A11F89 /* Pods_LLSocketManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLSocketManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C028E39714EA87BBD98D2C140DD47D01 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		C83D876240DBDC2C242059046080AC15 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
 		CAED7074BDA743369BCCEFDC6716467C /* Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-prefix.pch"; sourceTree = "<group>"; };
 		CD6788F5C85789D4451D18147F92D8B2 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
 		CE0B4CBBD829924338391038DEC29C1F /* LLSocketManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLSocketManager.xcconfig; sourceTree = "<group>"; };
 		D222DCA307068AE999389E368ACCB891 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
-		D6F3136E99840535D78B3DCF7CD49754 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D6F3136E99840535D78B3DCF7CD49754 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E3ED1851805D425BE6CBE73E9BCC8893 /* Pods-LLSocketManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LLSocketManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F328B7A5AD8CCDC5C70E8BFFBF51A203 /* Reachability-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Reachability-Info.plist"; sourceTree = "<group>"; };
 		F3ADF5DD87B38F20AE04A18EA449D7CA /* Pods-LLSocketManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LLSocketManager_Tests.modulemap"; sourceTree = "<group>"; };
@@ -239,7 +240,6 @@
 				C028E39714EA87BBD98D2C140DD47D01 /* GCDAsyncUdpSocket.m */,
 				D56AAB7B3505B71804C22723EC68C3B1 /* Support Files */,
 			);
-			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -250,7 +250,6 @@
 				74BC50CC1FB905D6E5AB240949B1284C /* Reachability.m */,
 				4528FC0B1B2C314FCF9B0994224A065D /* Support Files */,
 			);
-			name = Reachability;
 			path = Reachability;
 			sourceTree = "<group>";
 		};
@@ -792,8 +791,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

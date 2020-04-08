@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/LLSocketManager.h</key>
 		<data>
-		PQkjSmFIHxJHZLwdtnmLpyyWgQ8=
+		1kfFwlE+Nl2XtPDrAqKzmOif8bo=
 		</data>
 		<key>Headers/LLSocketMessage.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/LLSocketTool.h</key>
 		<data>
-		XVQN9xjKMAnAj/rDkUMUF2Nvot0=
+		jFakuvGqaJkn+9414ikzY1G6//I=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		avjTNsprGfJoaKJpKCwU6tiJEzQ=
+		LtMM92qbdwV1Pq/jxnKzuAcrh3Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PQkjSmFIHxJHZLwdtnmLpyyWgQ8=
+			1kfFwlE+Nl2XtPDrAqKzmOif8bo=
 			</data>
 			<key>hash2</key>
 			<data>
-			GsqIRgO+xaDkqN7fglpkS+AWeATBqyFN+2wq1ounGa0=
+			2H34NcruxwV8OynoE4IK0gy59nomQTQP0MhclgRZ208=
 			</data>
 		</dict>
 		<key>Headers/LLSocketMessage.h</key>
@@ -68,11 +68,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XVQN9xjKMAnAj/rDkUMUF2Nvot0=
+			jFakuvGqaJkn+9414ikzY1G6//I=
 			</data>
 			<key>hash2</key>
 			<data>
-			GugYdHiqOlCObea7LeyQ8bq5Ylm9LsecyNe3uAqYC7I=
+			Q2XTzQOYLLc15R0PlinCjCVeiOvJbfkqaAqVEtN7PQ0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

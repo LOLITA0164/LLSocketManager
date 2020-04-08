@@ -29,7 +29,9 @@
         NSLog(@"连接成功");
     };
     
-    
+    [NSNotificationCenter.defaultCenter addObserverForName:@"DOSOMETHING" object:nil queue:NSOperationQueue.mainQueue usingBlock:^(NSNotification * _Nonnull note) {
+        NSLog(@"%@", note);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

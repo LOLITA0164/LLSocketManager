@@ -21,9 +21,3 @@ FOUNDATION_EXPORT const unsigned char LLSocketManagerVersionString[];
 #import <LLSocketManager/LLSocketTool.h>
 #import <LLSocketManager/LLSocketMessage.h>
 
-
-#ifdef DEBUG
-#define LLLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
-#else
-#define LLLog(...)
-#endif

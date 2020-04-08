@@ -12,7 +12,6 @@
 #import <unistd.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "LLSocketManager.h"
 #import "LLSocketProtocol.h"
 #import "LLSocketMessage.h"
 

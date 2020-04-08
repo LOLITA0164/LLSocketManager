@@ -29,7 +29,7 @@
 /// socket 收到了数据
 - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag {
     NSString* dataContent = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    LLLog(@"收到 socket 消息：%@",dataContent);
+    NSLog(@"收到 socket 消息：%@",dataContent);
 }
 
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LLSocketManager'
-  s.version          = '0.2.4'
+  s.version          = '0.2.6'
   s.summary          = 'LLSocketManager 是一个自联管理类.'
 
 # This description is used to generate tags and improve search results.
@@ -30,9 +30,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.vendored_frameworks = 'LLSocketManager/Frameworks/*.framework'
+#  s.vendored_frameworks = 'LLSocketManager/Frameworks/*.framework'
   
-#  s.source_files = 'LLSocketManager/Classes/**/*'
+  s.source_files = 'LLSocketManager/Classes/**/*'
   
   # s.resource_bundles = {
   #   'LLSocketManager' => ['LLSocketManager/Assets/*.png']

@@ -1,6 +1,6 @@
 {
   "name": "LLSocketManager",
-  "version": "0.2.1",
+  "version": "0.2.5",
   "summary": "LLSocketManager 是一个自联管理类.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/LOLITA0164/LLSocketManager",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/LOLITA0164/LLSocketManager.git",
-    "tag": "0.2.1"
+    "tag": "0.2.5"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "vendored_frameworks": "LLSocketManager/Frameworks/*.framework",
+  "source_files": "LLSocketManager/Classes/**/*",
   "dependencies": {
     "Reachability": [
       "~> 3.2"
